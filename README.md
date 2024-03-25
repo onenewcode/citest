@@ -34,3 +34,20 @@
 添加流文件
 ![img_1.png](images%2Fimg_10.png)
 第二个红框中的内容需要换成你自己仓库的。然后保存我们的文件。
+# 测试
+我们首先把我们的仓库clone到本地，然后在根目录创建mytest.go文件，然后在文件中添加以下内容吗
+```go
+package citest
+
+import "fmt"
+
+func MyTest() {
+	fmt.Println("")
+}
+
+```
+然后我们push到github，这样我们的工作流便会运行，我们的github仓库便会产生这样的提示。
+![img_11.png](images%2Fimg_11.png)
+
+我们回到codecov点击我们添加测试的仓库，便会看到我们的测试结果，目前是空白的，是因为我们没有测试代码。接下来我们为我们的仓库添加测试代码。
+
