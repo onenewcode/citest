@@ -50,4 +50,18 @@ func MyTest() {
 ![img_11.png](images%2Fimg_11.png)
 
 我们回到codecov点击我们添加测试的仓库，便会看到我们的测试结果，目前是空白的，是因为我们没有测试代码。接下来我们为我们的仓库添加测试代码。
+创建 mytest_test.go文件，然后在文件中添加以下内容。
+```go
+package citest
+
+import "testing"
+
+func TestMyTest(t *testing.T) {
+	MyTest()
+}
+
+```
+把我们修改后的问价提交到github，然后回到codecov，查看我们的的仓库，记得在仓库指定我们的分支。
+**结果如下**
+![img_11.png](images%2Fimg_12.png)
 
